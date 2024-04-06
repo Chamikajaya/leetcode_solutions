@@ -36,9 +36,9 @@ def groupAnagrams(strs):
         
         for i in range(len(word)):
             corresponding_idx = ord(word[i]) - 97  # 97 = ord("a")
-            boolean_mask[corresponding_idx] += 1
+            boolean_mask[corresponding_idx] += 1  # incrementing is need for cases like ["abbbb", "baaa"] 🥹
         
-        my_dict[tuple(boolean_mask)].append(word)
+        my_dict[tuple(boolean_mask)].append(word)  # make sure to convert the list to tuple as dict can not contain lists as their keys
         
     return my_dict.values()
             
