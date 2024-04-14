@@ -2,6 +2,13 @@ def productExceptSelf(nums):
     
     # * My initial solution --> O(n) but space is also O(n)
     
+    
+    # TODO:- Solve with constant space
+    
+    
+    
+    
+    
     size = len(nums)
     left_prod_array = [1] * size  # first element of nums will have left prod of 1
     right_prod_array = [1] * size  # last element of nums will have right prod of also 1
